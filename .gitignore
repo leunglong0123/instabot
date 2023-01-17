@@ -161,3 +161,7 @@ cython_debug/
 
 #instabot
 /config
+pics.txt
+
+#mac 
+.DS_Store

@@ -1,9 +1,11 @@
 from service.instabot import InstabotService
-
-POST_DIR = './static'
+from service.image import ImageService
+POST_DIR = './output'
+TMP_IMG = ''
 
 
 def main():
+    ImageService.png_to_jpg('static/temp-post-img.png', './output')
     is_ = InstabotService(POST_DIR)
     is_.upload_post()
 
